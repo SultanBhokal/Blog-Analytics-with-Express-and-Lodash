@@ -5,7 +5,7 @@ let cacheExpire = []
 
 function cachData(key, expiresIn, count) {
 
-    if (filterBlogsCache.cache.size >= 2) {
+    if (filterBlogsCache.cache.size >= 10) {
         // Remove using Least recently used cache
 
         let leastRecentlyUsedObj = cacheExpire[0];
